@@ -10,7 +10,7 @@ body {
 }
 .profile-pic {
     width: 250px;
-    height: 500px;
+    height: 250px;
     border-radius: 50%;
     object-fit: cover;
     border: 4px solid #4CAF50;
