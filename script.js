@@ -11,6 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }, options);
 
+    
     sections.forEach(section => observer.observe(section));
 
     // Dark mode toggle
