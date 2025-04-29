@@ -1,7 +1,9 @@
+
 document.addEventListener('DOMContentLoaded', () => {
     const sections = document.querySelectorAll('section');
     const options = { threshold: 0.2 };
 
+    
     const observer = new IntersectionObserver((entries, observer) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
@@ -14,6 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
     
     sections.forEach(section => observer.observe(section));
 
+    
     // Dark mode toggle
     const darkModeToggle = document.getElementById('darkModeToggle');
     darkModeToggle.addEventListener('click', () => {
