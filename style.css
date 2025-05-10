@@ -109,7 +109,9 @@ section.visible {
     opacity: 1;
     transform: translateY(0);
 }
-
+section :hover {
+    transform: scale(1.05);
+}
 .project-card {
     border-left: 4px solid #4CAF50;
     padding-left: 10px;
