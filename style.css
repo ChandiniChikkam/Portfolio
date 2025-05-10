@@ -9,18 +9,22 @@ body {
     transition: background 0.3s ease, color 0.3s ease;
 }
 
+  
 
-.header-container {
+header {
+    
+    color: black;
+    height: 35vh; /* Full screen height */
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 20px;
-    padding: 20px;
-    text-align: left;
+    text-align: center;
+    padding: 40px;
 }
 
-
 .profile-pic {
+    
     width: 200px;
     height: 200px;
     border-radius: 50%;
@@ -31,18 +35,34 @@ body {
 
 
 .header-info h1 {
+    
     font-size: 2.2rem;
-    margin: 0;
+    
+
 }
 
 
-.header-info p {
+.header-inf p {
     font-size: 1.2rem;
     color: #555;
+    
 }
 
+.github-link {
 
+    font-size: 1.1em;
+    color: white;
+    text-decoration: none;
+    background-color: #333;
+    padding: 5px 10px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+}
 
+.github-link:hover {
+    background-color: burlywood;
+}
 
 .dark-mode {
     background: #1a1a1a;
@@ -88,21 +108,18 @@ body {
 }
 
 h1 {
-    margin: 0;
+    margin: 0px;
     font-size: 2.5rem;
 }
 
 section {
-    padding: 20px;
-    margin: 20px auto;
+    
+     /* this centers it vertically and limits width */
+     margin: 20px auto;
     width: 80%;
     max-width: 1000px;
-    background: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-    opacity: 0;
-    transform: translateY(20px);
-    transition: all 0.6s ease-out;
+
+    
 }
 
 section.visible {
@@ -112,16 +129,10 @@ section.visible {
 section :hover {
     transform: scale(1.05);
 }
-.project-card {
-    border-left: 4px solid #4CAF50;
-    padding-left: 10px;
-    margin-bottom: 10px;
-    transition: transform 0.3s ease;
-}
 
-.project-card:hover {
-    transform: scale(1.05);
-}
+
+
+
 
 #backToTop {
     display: none;
@@ -166,4 +177,38 @@ footer {
     }
 }
 
+.resume-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color:black;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
 
+.resume-btn:hover {
+    background-color: burlywood;
+}
+#contact {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+#contact h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+#contact a {
+    color: #2575fc;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#contact a:hover {
+    text-decoration: underline;
+}
