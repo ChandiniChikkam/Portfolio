@@ -1,4 +1,3 @@
-
 document.addEventListener('DOMContentLoaded', () => {
     const sections = document.querySelectorAll('section');
     const options = { threshold: 0.2 };
